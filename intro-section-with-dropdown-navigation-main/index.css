@@ -1,0 +1,331 @@
+
+.mobile-header-left,
+.mobile-header-right{
+  display: none;
+}
+
+body{
+  background-color: hsl(0, 0%, 93%);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+p{
+  display: inline-block;
+}
+
+.header{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.left,
+.mobile-hide{
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  margin-left: 2rem;
+  align-items: center;
+}
+.mobile-hide{
+  margin-left: 0;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  gap: 2rem;
+}
+
+.right button{
+  margin-left: 2rem;
+}
+
+.feature-click,
+.company-click,
+.about,
+.arrow{
+  cursor: pointer;
+}
+
+.login{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.register{
+  border: .01rem solid black;
+  padding: .5rem 1rem;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+
+/* main contant */
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  margin: 5rem 10rem;
+}
+
+.texts{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1;
+  max-width: 37.5rem;
+}
+
+.big-text{
+  margin-top: 6rem;
+  font-size: 5rem;
+}
+
+.some-text{
+  font-size: 1.1rem;
+  color: gray;
+}
+
+.learn{
+  padding: .5rem 1rem;
+  border: .01rem solid black;
+  border-radius: .4rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.for-images{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.size{
+  width: 5rem;
+}
+
+
+.image-side{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+@media (max-width: 56.25rem) {
+
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 1rem;
+  }
+
+  .image-side {
+    order: -1;
+  }
+
+  .texts{
+    text-align: center;
+    align-items: center;
+  }
+
+  .big-text{
+    margin-top: 0;
+     font-size: 3rem;
+  }
+
+  .some-text{
+    font-size: 1.5rem;
+  }
+
+  .learn{
+    color: white;
+    background-color: black;
+  }
+
+
+}
+
+.desktop-img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* desktop menus */
+
+
+.open-feature{
+  position: absolute;
+  top: 5rem;
+  left: 3rem;
+  display: flex;
+  width: 10rem;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .2);
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  column-gap: 2rem;
+  padding: 1.5rem .8rem;
+  color: gray;
+}
+
+.feature-hide{
+  display: none;
+}
+
+.images{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.images img{
+  padding: 0.5rem 0;
+}
+
+
+
+.names{
+  display: flex;
+  flex-direction: column;
+}
+
+.names p{
+  margin: 0.5rem 0;
+}
+
+.company-open{
+  position: absolute;
+  top: 5rem;
+  left: 17rem;
+  display: flex;
+  flex-direction: column;
+  width: 8rem;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .2);
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  padding-left: 1rem;
+
+}
+
+.company-hide{
+  display: none;
+}
+
+.company-open p{
+  margin: .5rem;
+  color: gray;
+}
+
+.desktop-menu,
+.others{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+
+/* mobile menu */
+.mobile-menu{
+  display: none;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+
+.mobile-menu button{
+  color: gray;
+  background-color: transparent;
+  margin: 0 1.5rem;
+}
+
+.mobile{
+  flex-direction: column;
+  align-items: start;
+  gap: 0;
+  margin-left: 1.5rem;
+  color: gray;
+  justify-content: start;
+}
+
+.mobile2{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+
+.x{
+  margin-left: 89%;
+  margin-top: 1rem;
+}
+
+.desktop-menu2{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.open-feature2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+  color: gray;
+  margin-left: 2rem;
+}
+
+.feature-hide2{
+  display: none;
+}
+
+.desktop-menu-mobile{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+
+.company-open2{
+  margin-left: 2rem;
+}
+
+.company-open2 p{
+  display: block;
+}
+
+.company-hide2{
+  display: none;
+}
+
+.menu{
+  cursor: pointer;
+}

@@ -107,4 +107,27 @@ updateHeaderContent()
 window.addEventListener('resize', updateHeaderContent);
 
 
+feature.classList.add('feature-hide-class');
+company.classList.add('company-hide-class');
+mobileCompany.classList.add('company-hide2-class');
+mobileFeature.classList.add('feature-hide2-class')
+mobileMenu.classList.add('mobile-menu-class')
 
+window.onclick = function(event) {
+  if (!event.target.matches('.feature-hide-class') && event.target !== featureArrow) {
+    feature.style.display = 'none';
+  }
+
+  if (!event.target.matches('.company-hide-class') && event.target !== companyArrow) {
+    company.style.display = 'none';
+  }
+
+  if (!event.target.matches('.company-hide2-class') && event.target !== companyArrow4) {
+    mobileCompany.style.display = 'none';
+  }
+
+  if (!event.target.matches('.feature-hide2-class') && event.target !== featureArrow3) {
+    mobileFeature.style.display = 'none';
+  }
+
+}
